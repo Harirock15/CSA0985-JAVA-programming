@@ -1,0 +1,29 @@
+class calculator
+{
+    public static void main(String[] args)
+    {
+        int n1=13,n2=18,result=0;
+        char operator='-';
+        switch(operator)
+        {
+            case '+':
+            result=n1+n2;
+            break;
+            case '-':
+             result=n1-n2;
+             break;
+             case '*':
+             result=n1*n2;
+             case '/':
+             if(n2==0)
+             System.out.println("enter the non zero values");
+            else
+              result=n1/n2;
+              break;
+              default:
+             System.out.println("enter the non zero values");
+             return;
+        }
+        System.out.println("result:"+result);
+    }
+}
