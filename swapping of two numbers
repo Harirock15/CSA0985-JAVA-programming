@@ -1,0 +1,15 @@
+class sum {
+    public static void main(String[] args) {
+        int n1=50,n2=40;
+         System.out.println("before swapping");
+        System.out.println("first number"+n1);
+        System.out.println("second number"+n2);
+        int temp=n1;
+        n1=n2;
+        n2=temp;
+         System.out.println("After swpping");
+        System.out.println("first number"+n1);
+         System.out.println("second number"+n2);
+         
+    }
+}
