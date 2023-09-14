@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class rectangle
+{
+    int l,b,area;
+    void display()
+    {
+        System.out.println("its ok!");
+    }
+}
+class mulitiple
+{
+    public static void main(String[] args)
+    {
+        rectangle a1=new rectangle();
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the l value: ");
+        a1.l=input.nextInt();
+        System.out.println("enter the b value: ");
+        a1.b=input.nextInt();
+        a1.area=a1.l*a1.b;
+        System.out.println("area of the rectangle: "+a1.area);
+        a1.display();
+}
+}
