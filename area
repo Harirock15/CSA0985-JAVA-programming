@@ -1,0 +1,27 @@
+import ja  ok va.util.Scanner;
+class Area 
+{
+    double length;
+    double breadth;
+    public static void main(String[] args) 
+    {
+        Area rectangle = new Area();
+        rectangle.setDim();
+        double area = rectangle.getArea();
+        System.out.println("Area of the rectangle: " + area);
+    }
+
+    public void setDim() 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the length: ");
+        length = scanner.nextDouble();
+        System.out.print("Enter the breadth: ");
+        breadth = scanner.nextDouble();
+    }
+
+    public double getArea() 
+{
+        return length * breadth;
+   }
+}
