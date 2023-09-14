@@ -1,0 +1,10 @@
+class BinaryTohexadecimal
+{
+    public static void main(String[] args) 
+    {
+        String binaryNumber = "111";
+        int decimalNumber = Integer.parseInt(binaryNumber, 2); 
+        String hexadecimalNumber = Integer.toHexString(decimalNumber).toUpperCase();
+        System.out.println("hexa representation of " + binaryNumber + " is: " + hexadecimalNumber);
+    	}
+}
