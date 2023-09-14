@@ -1,0 +1,20 @@
+class SimpleInterestCalculator {
+
+    public static void main(String[] args) {
+        double principalAmount = 200000;
+        int timePeriod = 3;
+        boolean isSeniorCitizen = true; // Change this to false if the customer is not a senior citizen
+
+        double interestRate = isSeniorCitizen ? 0.12 : 0.10;
+        double simpleInterest = calculateSimpleInterest(principalAmount, timePeriod, interestRate);
+
+        System.out.println("Principal Amount: " + principalAmount);
+        System.out.println("Time Period (years): " + timePeriod);
+        System.out.println("Interest Rate: " + (interestRate * 100) + "%");
+        System.out.println("Simple Interest: " + simpleInterest);
+    }
+
+    public static double calculateSimpleInterest(double principal, int timePeriod, double interestRate) {
+        return principal * interestRate * timePeriod;
+    }
+}
